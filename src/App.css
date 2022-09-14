@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body {
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.8438725832129726) 7%, rgba(2,2,125,0.3648809865743172) 37%, rgba(0,212,255,0.2248249641653537) 100%);
+}
+.Typography  h5 {
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.105);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.search-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+.search-form input {
+    margin: 5% 0;
+    background-color: rgba(0, 0, 0, 0.237);
+    border-radius: 25px;
+    z-index: 2;
+}
+.search-form button {
+    height: 2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.263);
+    border-radius: 20px ;
+    border: none;
+    color: rgb(28, 71, 110);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px 30px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Data-Main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Data-Main div {
+    margin-bottom: 50px;
+    width: 40%;
 }
-
-.App-link {
-  color: #61dafb;
+.Data-Main div img {
+    border-radius: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Data-Main div ol {
+    padding: 0;
+}
+.Data-Main div li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.HrStyle {
+    color: black;
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    border: 1px solid black;
+}
+.caloriesSpan {
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    border-radius: 40%;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.408);    
+    
+}
+@media screen and (min-width:1px) and (max-width:800px) {
+    .Data-Main {
+        flex-direction: column;
+        align-items: center;
+    }
 }
